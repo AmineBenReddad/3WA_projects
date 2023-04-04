@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: grey;
+        }
+    </style>
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <form>
+        <label>Titre : </label>
+        <input type="radio" name="titre" required>
+        <label>Madame</label>
+        <input type="radio" name="titre" required>
+        <label>Monsieur</label>
+        <br><br>
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" placeholder="Entrez votre nom" required>
+        <br><br>
+        <label for="prenom">Prénom : </label>
+        <input type="text" id="prenom" placeholder="Entrez votre prénom" required>
+        <br><br>
+        <label for="adress">Adresse : </label>
+        <input type="text" id="adress" placeholder="Votre adresse" required>
+        <br><br>
+        <label for="ville">Ville : </label>
+        <input type="text" id="ville" placeholder="Votre ville" required>
+        <br><br>
+        <label for="pays">Pays : </label>
+        <input type="text" id="pays" placeholder="Votre pays" required>
+        <br><br>
+        <label for="mail">Email : </label>
+        <input type="email" id="mail" placeholder="Entrez votre Email" required>
+        <br><br>
+        <label for="tel">Telephonne : </label>
+        <input type="tel" id="tel" placeholder="Entrez votre numero" required>
+        <br><br>
+        <label for="dn">Date de naissance : </label>
+        <input type="date" id="dn" required>
+        <br><br>
+        <label>Votre Photo : </label>
+        <input type="file" required>
+        <br><br>
+        <label for="pswd">Mot de passe : </label>
+        <input type="password" id="pswd" placeholder="Entrez un mot de passe" required>
+        <br><br>
+        <label for="cours">Cours : </label>
+        <input type="checkbox" name="cours" required>
+        <label>Jour</label>
+        <input type="checkbox" name="cours" required>
+        <label>Soir</label>
+        <br><br>
+        <label for="comment">Commentaires : </label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
