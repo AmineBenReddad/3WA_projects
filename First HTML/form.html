@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" value="" required readonly disabled minlength="1" maxlength="10" placeholder="Enter username">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <label for="mail">Mail</label>
+        <input type="email" name="mail" id="mail">
+        <button type="submit">Login</button>
+        <br>
+        <h5>What's your gender :</h5>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="gender">Female</label>
+        <br>
+        <h5>Choose your car :</h5>
+        <label>Dacia</label>
+        <input type="checkbox" name="car">
+        <label>Clio</label>
+        <input type="checkbox" name="car">
+        <br>
+        <br>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <input type="range">
+    </form>
+</body>
+</html>
