@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #2B2B28;
+    background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    /* background: rgb(2,0,36); */
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(43,43,40,1) 33%, rgba(241,214,171,1) 100%);
+    background-blend-mode: darken;
 }
 
 .form {
