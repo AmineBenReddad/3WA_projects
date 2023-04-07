@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    width: 35%;
+    margin: auto;
+    margin-top: 170px;
+    margin-bottom: 150px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+
+}
+
+.photo {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.photo img {
+    width: 330px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.info {
+    height: 495px;
+    padding-right: 40px;
+    padding-top: 40px;
+    position: relative;
+}
+
+.info h5 {
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 7px;
+}
+
+.info h2 {
+    padding-right: 60px;
+    margin-bottom:30px ;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(212, 21%, 14%);
+}
+.info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+}
+.info h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    margin-bottom: 30px;
+}
+
+.info span {
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    position: absolute;
+    top: 347px;
+    right: 120px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    padding: 15px 70px;
+    margin-left: 20px;
+    color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 10px;
+}
+.info i {
+    margin-right: 7px;
+}
+button:hover {
+    background-color: hsl(158, 50%, 14%);
+    cursor: pointer;
+}
