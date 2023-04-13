@@ -28,7 +28,7 @@ header {
     position: relative;
 }
 .logo img {
-    width: 110px;
+    width: 100px;
 }
 .logo a {
     color: white;
@@ -37,7 +37,7 @@ header {
     font-size: 55px;
     position: absolute;
     top: 24px;
-    left: 95px;
+    left: 85px;
 }
 header ul {
     display: flex;
