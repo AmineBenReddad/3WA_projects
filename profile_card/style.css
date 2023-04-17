@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(65,203,211) ;
+    background: radial-gradient(circle, rgba(65,203,211,1) 0%, rgba(59,198,209,1) 40%, rgba(59,199,209,1) 50%, rgba(69,221,221,1) 91%);
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 350px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.wall svg {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+span {
+    position: absolute;
+    top: 84px;
+    right: 125px;
+}
+span img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.info {
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.NameAge {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.name {
+    padding-right: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.age {
+    padding-top: 2.5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.city {
+    font-size: 18px;
+    color: hsl(0, 0%, 59%);
+}
+
+.numbers {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    border-top: 0.1px solid hsl(0, 0%, 59%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.followers {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.followers h2 {
+    margin-bottom: 5px;
+}
+.followers p {
+    color: hsl(0, 0%, 59%);
+}
+
