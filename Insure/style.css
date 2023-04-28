@@ -73,6 +73,19 @@ nav a {
     font-size: 14px;
     letter-spacing: 1px;
 }
+nav a:hover {
+    color: hsl(256, 26%, 20%);
+    transition: 0.5s;
+}
+nav button {
+    color: hsl(256, 26%, 20%);
+}
+nav button:hover {
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+    cursor: pointer;
+    transition: 0.5s;
+}
 
 
 /* Landing */
@@ -88,6 +101,12 @@ nav a {
 }
 .purple-bg button {
     color: hsl(0, 0%, 98%);
+}
+.purple-bg button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+    transition: 0.5s;
+    cursor: pointer;
 }
 .landing-content {
     width: 50%;
@@ -197,6 +216,12 @@ nav a {
 .find-out button {
     color: hsl(0, 0%, 98%);
 }
+.find-out button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+    transition: 0.5;
+    cursor: pointer;
+}
 .find-out .pattern {
     background-image: url(images/bg-pattern-how-we-work-desktop.svg);
     width: 434px;
@@ -220,7 +245,12 @@ footer {
 }
 .social {
     display: flex;
+    align-items: center;
     gap: 10px;
+}
+.social img:hover{
+    fill: hsl(256, 26%, 20%);
+    cursor: pointer;
 }
 footer .line {
     width: 100%;
@@ -238,9 +268,13 @@ footer .line {
     margin-bottom: 10px;
 }
 .footer-content a {
-    color: hsl(270, 9%, 17%);
+    color: hsl(256, 26%, 20%);
     text-decoration: none;
     font-size: 14px;
+}
+.footer-content a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
 }
 
 @media (max-width: 375px){
