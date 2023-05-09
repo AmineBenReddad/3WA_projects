@@ -1,7 +1,6 @@
 const removeElement = (arr, elm) =>{
     let arr2 = []
     for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i]);
         if (arr[i] != elm)
         arr2.push(arr[i])
     }
