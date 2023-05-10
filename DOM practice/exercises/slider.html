@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Slider</title>
+    <style>
+        .container {
+            width: 1200px;
+            height: 500px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            margin-top: 150px;
+        }
+        .slider {
+            height: 500px;
+            width: 1000px;
+            display: flex;
+        }
+        .slider img {
+            width: calc(100% / 3);
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="back">Back</button>
+        <div class="slider">
+            <img src="images/1.jpg">
+            <!-- <img src="images/2.jpg">
+            <img src="images/3.jpg"> -->
+        </div>
+        <button id="next">Next</button>
+    </div>
+</body>
+<script>
+    let next = document.getElementById("next")
+    let back = document.getElementById("back")
+    let img = document.getElementsByTagName("img")
+    let images = ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg","images/6.jpg","images/7.jpg" ]
+    let i = 0
+
+    next.onclick = () =>{
+        i++
+        if (i >= images.length)
+            i = 0
+        img[0].src = images[i]
+        // img[1].src = images[i+1]
+        // img[2].src = images[i+2]
+
+    }
+    back.onclick = () =>{
+        i--
+        if (i <= 0)
+            i = images.length - 1
+        img[0].src = images[i]
+        // img[1].src = images[i+1]
+        // img[2].src = images[i+2]
+
+    }
+</script>
+</html>

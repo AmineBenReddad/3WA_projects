@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg Color</title>
+    <style>
+        .btns {
+            width: 400px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 200px;
+        }
+        button {
+            padding: 20px 40px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <button id="red">RED</button>
+        <button id="green">GREEN</button>
+        <button id="blue">BLUE</button>
+    </div>
+</body>
+<script>
+    let red = document.getElementById("red")
+    red.onclick = () =>{
+        document.body.style.backgroundColor = "red"
+    }
+    //hover
+    red.onmouseover = () =>{
+        document.body.style.backgroundColor = "#E67E7E"
+    }
+
+    let green = document.getElementById("green")
+    green.onclick = () =>{
+        document.body.style.backgroundColor = "green"
+    }
+    green.onmouseover = () =>{
+        document.body.style.backgroundColor = "#6DE792"
+    }
+
+    let blue = document.getElementById("blue")
+    blue.onclick = () =>{
+        document.body.style.backgroundColor = "blue"
+    }
+    blue.onmouseover = () =>{
+        document.body.style.backgroundColor = "#6D85E7"
+    }
+
+</script>
+</html>
+
+
+<!-- 
+    onclick = "changeColor(this)"
+
+    function changeColor(elm){
+        document.body.style.backgroundColor = elm.id
+    }
+ -->
