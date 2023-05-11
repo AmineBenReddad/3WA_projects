@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Div Color</title>
+    <style>
+        #circle {
+            width: 100px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: red;
+            margin: auto;
+            margin-top: 100px;
+            text-align: center;
+        }
+        p{
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle">
+        <p id="colorName">Red</p>
+    </div>
+</body>
+<script>
+    let circle = document.getElementById("circle")
+    let colorName = document.getElementById("colorName")
+    let w = 100
+    circle.onclick = () =>{
+        let randomColor = Math.floor(Math.random()*16777215).toString(16);
+        console.log(w);
+        if (w == 200){
+            w = 100
+        }
+        else {
+            w = w + 10
+        }
+        circle.style.width = w + 'px';
+        circle.style.backgroundColor = "#" + randomColor
+        colorName.innerHTML = "#" + randomColor
+    }
+</script>
+</html>
