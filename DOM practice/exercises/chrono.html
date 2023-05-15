@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Chrono</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            width: 700px;
+            height: 300px;
+            margin: auto;
+            margin-top: 150px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 8px solid #7BC74D;
+            border-radius: 30px;
+            background-color: #393E46;
+        }
+        .chrono {
+            margin-top: 50px;
+            height: 80px;
+        }
+        #txt {
+            font-size: 50px;
+            color: #EEEEEE;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .btns {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 30px;
+        }
+        button {
+            padding: 16px 25px;
+            font-size: 20px;
+            border-radius: 30px;
+            border: 3px solid #393E46;
+            background-color: #7BC74D;
+            color: #393E46;
+            font-weight: 500;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chrono">
+            <p id="txt"></p>
+        </div>
+        <div class="btns">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+<script>
+    let txt = document.getElementById("txt")
+    let start = document.getElementById("start")
+    let pause = document.getElementById("pause")
+    let reset = document.getElementById("reset")
+
+
+    let s = '0'+0
+    let h = '0'+0
+    let m = '0'+0
+    let inter
+    txt.innerHTML = `${h} : ${m} : ${s}`
+
+    start.onclick = () =>{
+        inter = setInterval(() => {
+            txt.innerHTML = `${h} : ${m} : ${s}`
+            s++
+            if (s < 10){
+                s = '0'+s
+            }
+            if (s > 59){
+                s = '0'+0
+                m++
+                if (m < 10){
+                    m = '0'+m
+                }
+            }
+            if (m > 59){
+                m = '0'+0
+                h++
+                if (h < 10){
+                    h = '0'+h
+                }
+            }
+            if (h > 23){
+                s = '0'+0
+                m = '0'+0
+                h = '0'+0
+            }
+        }, 1000)
+    }
+
+    pause.onclick = () => {
+        clearInterval(inter)
+    }
+    reset.onclick = () => {
+        s = '0'+0
+        m = '0'+0
+        h = '0'+0
+        clearInterval(inter)
+        txt.innerHTML = `${h} : ${m} : ${s}`
+    }
+</script>
+</html>
