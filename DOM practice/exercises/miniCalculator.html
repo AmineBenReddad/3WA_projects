@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 100px;
+            padding: 30px 70px;
+            margin: auto ;
+            margin-top: 200px;
+            border: 6px solid #84253E;
+            background-color: #FDF1DB;
+            border-radius: 20px;
+        }
+        .inputs {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        input {
+            width: 200px;
+            border-radius: 20px;
+            padding: 0 10px;
+            background-color: #FDF1DB;
+            border: 2px solid #A6CB12;
+        }
+        select {
+            width: 100px;
+            text-align: center;
+            background-color: #FDF1DB;
+            /* border: 2px; */
+        }
+        button {
+            width: 100px;
+            padding: 8px 18px;
+        }
+        p {
+            text-align: center;
+        }
+        #err {
+            color: #E00543;
+        }
+        #res {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inputs">
+            <input type="text" id="firstNumber" pattern="[0-9]+">
+            <select name="calc" id="calc">
+                <option value="plus">+</option>
+                <option value="minus">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+                <option value="modulo">%</option>
+            </select>
+            <input type="text" id="secondNumber" pattern="[0-9]+">
+            <button id="btn">Calculate</button>
+        </div>
+        <div class="result">
+            <p id="res"></p>
+            <p id="err"></p>
+        </div>
+    </div>
+</body>
+<script>
+    let calc = document.getElementById("calc")
+    let btn = document.getElementById("btn")
+    let res = document.getElementById("res")
+
+    btn.onclick = () =>{
+        let firstNumber = document.getElementById("firstNumber").value
+        let secondNumber = document.getElementById("secondNumber").value
+        let r = 0
+        let letters = /^[A-Za-z]+$/
+        if (firstNumber == "" || secondNumber == "")
+        {
+            err.innerHTML = "Empty input!"
+            res.innerHTML = ""
+        }
+        else if (firstNumber.match(letters) || secondNumber.match(letters)){
+            err.innerHTML = "Please enter valid numbers"
+            res.innerHTML = ""
+        }
+        else if (calc.value == "plus"){
+            r = eval(`${firstNumber} + ${secondNumber}`)
+            res.innerHTML = r
+            err.innerHTML = ""
+        }
+        else if (calc.value == "minus"){
+            r = eval(`${firstNumber} - ${secondNumber}`)
+            res.innerHTML = r
+            err.innerHTML = ""
+        }
+        else if (calc.value == "multiply"){
+            r = eval(`${firstNumber} * ${secondNumber}`)
+            res.innerHTML = r
+            err.innerHTML = ""
+        }
+        else if (calc.value == "divide"){
+            r = eval(`${firstNumber} / ${secondNumber}`)
+            res.innerHTML = r
+            err.innerHTML = ""
+        }
+        else if (calc.value == "modulo"){
+            r = eval(`${firstNumber} % ${secondNumber}`)
+            res.innerHTML = r
+            err.innerHTML = ""
+        }
+    }
+</script>
+</html>
