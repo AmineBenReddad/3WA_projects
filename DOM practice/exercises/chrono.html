@@ -16,6 +16,9 @@
             box-sizing: border-box;
             font-family: 'Roboto', sans-serif;
         }
+        body {
+            background-color: #222831;
+        }
         .container {
             width: 700px;
             height: 300px;
@@ -28,6 +31,7 @@
             border: 8px solid #7BC74D;
             border-radius: 30px;
             background-color: #393E46;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
         .chrono {
             margin-top: 50px;
@@ -54,6 +58,7 @@
             color: #393E46;
             font-weight: 500;
             cursor: pointer;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
             
         }
     </style>
@@ -84,6 +89,7 @@
     txt.innerHTML = `${h} : ${m} : ${s}`
 
     start.onclick = () =>{
+        start.disabled = true
         inter = setInterval(() => {
             txt.innerHTML = `${h} : ${m} : ${s}`
             s++
@@ -113,9 +119,11 @@
     }
 
     pause.onclick = () => {
+        start.disabled = false
         clearInterval(inter)
     }
     reset.onclick = () => {
+        start.disabled = false
         s = '0'+0
         m = '0'+0
         h = '0'+0
