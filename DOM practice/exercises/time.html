@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Time</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            width: 700px;
+            height: 300px;
+            margin: auto;
+            margin-top: 150px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 8px solid #7BC74D;
+            border-radius: 30px;
+            background-color: #393E46;
+        }
+        .timer {
+            margin-top: 50px;
+            height: 80px;
+        }
+        #time {
+            font-size: 50px;
+            color: #EEEEEE;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .btns {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 30px;
+        }
+        button {
+            padding: 16px 25px;
+            font-size: 20px;
+            border-radius: 30px;
+            border: 3px solid #393E46;
+            background-color: #7BC74D;
+            color: #393E46;
+            font-weight: 500;
+            cursor: pointer;
+            
+        }
+        .msg p {
+            font-size: 10px;
+            color: #7BC74D;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <p id="time"></p>
+        </div>
+        <div class="btns">
+            <button id="stop">Stop</button>
+            <button id="start">Start</button>
+        </div>
+        <div class="msg">
+            <p>Please click start to show Time, and click stop to stop it!</p>
+        </div>
+    </div>
+</body>
+<script>
+    let t = document.getElementById("time")
+    let stp = document.getElementById("stop")
+    let start = document.getElementById("start")
+
+    let inter
+    
+    start.onclick = () => {
+        inter = setInterval(() => {
+            let d = new Date()
+            let h = d.getHours()
+            let m = d.getMinutes()
+            let s = d.getSeconds()
+            if (h < 10){
+                h = '0'+h
+            }
+            if (m < 10){
+                m = '0'+m
+            }
+            if (s < 10){
+                s = '0'+s
+            }
+            t.innerHTML = `${h} : ${m} : ${s}`
+        }, 1000)
+    }
+stp.onclick = () => {
+    clearInterval(inter)
+}
+</script>
+</html>
