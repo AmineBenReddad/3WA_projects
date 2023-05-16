@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>To-do List</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        color: whitesmoke;
+      }
+      body {
+        background-color: #8fe3cf;
+      }
+      .container {
+        max-width: 800px;
+        height: 600px;
+        background-color: #002b5b;
+        margin: auto;
+        margin-top: 80px;
+        padding: 50px 80px;
+        text-align: center;
+        border-radius: 30px;
+        border: 10px solid #2b4865;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      h1 {
+        margin-bottom: 30px;
+        font-weight: 600;
+        text-decoration: underline;
+        font-size: 35px;
+      }
+      .input {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 10px;
+      }
+      input {
+        width: 340px;
+        padding: 10px 25px;
+        border-radius: 30px;
+        color: #2b4865;
+        border: 3px solid #256d85;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      }
+      input:focus {
+        outline: none;
+        border: 3px solid #8fe3cf;
+      }
+      button {
+        padding: 10px 15px;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 30px;
+        background-color: #8fe3cf;
+        color: #2b4865;
+        border: 3px solid #256d85;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: #256d85;
+        color: #8fe3cf;
+        transition: 0.4s;
+        border: 3px solid #8fe3cf;
+      }
+      #remove {
+        background-color: tomato;
+      }
+      #remove:hover {
+        background-color: rgb(113, 1, 1);
+      }
+      .errorDiv {
+        height: 30px;
+        text-align: left;
+        padding-left: 130px;
+      }
+      #error {
+        color: #8fe3cf;
+      }
+      ::-webkit-scrollbar {
+        width: 15px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #2b4865;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #8fe3cf;
+        border-radius: 30px;
+      }
+      .content {
+        padding: 20px 90px;
+        height: 300px;
+        text-align: left;
+        overflow-y: auto;
+      }
+      li {
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 7px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do List</h1>
+      <div class="input">
+        <input id="inp" type="text" />
+        <button id="add">Add</button>
+        <button id="remove">Remove</button>
+      </div>
+      <div class="errorDiv"><p id="error">Enter What You Want To Do.</p></div>
+      <div class="content">
+        <ul id="list">
+          <li>ugougou</li>
+          <li>ugougou</li>
+          <li>ugougou</li>
+          <li>ugougou</li>
+          <li>ugougou</li>
+          <li>ugougou</li>
+          <li>ugougou</li>
+          <li>ugougou</li>
+          <li>ugougou</li>
+          <li>ugougou</li>
+          <li>ugougou</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    let inp = document.getElementById("inp");
+    let add = document.getElementById("add");
+    let list = document.getElementById("list");
+    let error = document.getElementById("error");
+    let li = document.getElementsByTagName("li");
+    let remove = document.getElementById("remove");
+
+    add.onclick = () => {
+      if (inp.value != "") {
+        let li = document.createElement("li");
+        li.innerText = inp.value;
+        list.append(li);
+        error.innerText = "";
+        inp.value = "";
+      } else {
+        error.innerText = "Please fill the input above!";
+        error.style.color = "red";
+      }
+    };
+
+    inp.onkeydown = (e) => {
+      if (e.key == "Enter") {
+        if (inp.value != "") {
+          let li = document.createElement("li");
+          li.innerText = inp.value;
+          list.append(li);
+          error.innerText = "";
+          inp.value = "";
+        } else {
+          error.innerText = "Please fill the input above!";
+          error.style.color = "red";
+        }
+      }
+    };
+
+    Array.from(li).forEach((e) => {
+        e.addEventListener("click", () => {
+            let checkbox = document.createElement("input");
+            checkbox.style.width = "20px";
+            if (e.childElementCount == 0) {
+                checkbox.setAttribute("type", "checkbox");
+                checkbox.checked = true;
+                e.append(checkbox);
+            } else e.lastElementChild.remove();
+            
+        });
+    });
+    remove.onclick = () => {
+        let checkbox = getElementsByTagName("input")
+        Array.from(checkbox).forEach((e) => {
+            if (checkbox.type == "checkbox" && checkbox.checked == true){
+                e.remove()
+            }
+
+        })
+    }
+
+</script>
+</html>
