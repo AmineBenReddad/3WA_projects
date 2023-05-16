@@ -118,6 +118,9 @@
         flex-direction: row;
         gap: 20px;
       }
+      .check_style {
+        background-color: red;
+      }
     </style>
   </head>
   <body>
@@ -186,6 +189,7 @@
         e.addEventListener("click", () => {
             let checkbox = document.createElement("input");
             checkbox.style.width = "20px";
+            checkbox.classList.add("check_style")
             if (e.childElementCount == 0) {
                 checkbox.setAttribute("type", "checkbox");
                 checkbox.checked = true;
@@ -195,9 +199,8 @@
         });
     });
     remove.onclick = () => {
-        let checkbox = getElementsByTagName("input")
-        Array.from(checkbox).forEach((e) => {
-            if (checkbox.type == "checkbox" && checkbox.checked == true){
+        Array.from(li).forEach((e) => {
+            if (e.childElementCount > 0){
                 e.remove()
             }
 
