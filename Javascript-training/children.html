@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        #parent {
+            display: flex;
+
+            height: 50vh;
+            width: 100vw;
+            background-color: #000;
+            margin: 50px;
+        }
+        #parent div {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: red;
+            font-size: 70px;
+            color: #fff;
+        }
+        #parent2 {
+            display: flex;
+            height: 50vh;
+            width: 100vw;
+            background-color: #000;
+        }
+        #parent2 div {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: red;
+            font-size: 70px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div id="el">3</div>
+        <div>4</div>
+    </div>
+    <div id="parent2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+<script>
+    let el = document.getElementById("el")
+
+    let div2 = el.parentElement.nextElementSibling
+    Array.from(div2.children).forEach((e) => {
+            e.style.backgroundColor = "blue"
+    })
+
+
+</script>
+</html>
