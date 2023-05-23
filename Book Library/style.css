@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    font-family: 'Epilogue', sans-serif;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+#title {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #FFE9B1;
+    text-shadow: .1em .1em 0 #0f0c29;
+}
+.input-area {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+    padding-right: 80px;
+}
+.input-area input {
+    padding: 10px 15px;
+    background-color: transparent;
+    border-bottom: 3px solid #FFE9B1;
+    border-left: 3px solid #FFE9B1;
+    border-top: 3px solid #FFE9B1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #0f0c29;
+}
+.input-area input:focus {
+    background-color: #FCFDF2;
+    outline: none;
+}
+.input-area button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0f0c29;
+    color: #FFE9B1;
+    border-bottom: 3px solid #FFE9B1;
+    border-right: 3px solid #FFE9B1;
+    border-top: 3px solid #FFE9B1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.input-area button:hover {
+    background-color: #FFE9B1;
+    color: #0f0c29;
+    transition: 0.3s;
+}
+
+.input-area button i {
+    margin-right: 5px;
+}
+
+
+
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    width: calc(100%/5);
+    height: 600px;
+    border: 3px solid #0f0c29;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #FCFDF2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:hover {
+    transition: 0.5s;
+    transform : scale(110%);
+    cursor: pointer;
+}
+.content img {
+    height: 260px;
+    margin-bottom: 10px;
+}
+.content h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.content h4 {
+    margin-bottom: 5px;
+}
+.content h6 {
+    margin-bottom: 10px;
+}
+.description {
+    margin-bottom: 10px;
+    height: 100px;
+    overflow: scroll;
+    padding-bottom: 10px;
+}
+.description p {
+    font-size: 14px;
+}
+.price-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Read More */
+#more {
+    display: none;
+}
+#read {
+    color: blue;
+}

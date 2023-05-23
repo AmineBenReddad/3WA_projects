@@ -1,0 +1,213 @@
+[
+    {
+      "id": 1,
+      "name": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 200,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://cdn.shopify.com/s/files/1/0458/6386/2439/products/81ioPZFMeUL-min.jpg?v=1631701482",
+      "discription": "The Alchemist is a novel by Brazilian author Paulo Coelho that was first published in 1988. Originally written in Portuguese, it became a widely translated international bestseller. An allegorical novel, The Alchemist follows a young Andalusian shepherd in his journey to the pyramids of Egypt, after having a recurring dream of finding a treasure there. The story was influenced by the works of Antoine de Saint-Exupéry, Miguel de Cervantes, and the writings of Kahlil Gibran. The Alchemist has been translated into 80 languages and sold more than 65 million copies worldwide, with 1.5 million copies sold in the United States."
+    },
+    {
+      "id": 2,
+      "name": "The Monk Who Sold His Ferrari",
+      "author": "Robin Sharma",
+      "price": 300,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/513RkbVpERL._AC_SY780_.jpg",
+      "discription": "The Monk Who Sold His Ferrari is a 1997 self-help book by Robin Sharma. The book is a fable about Julian Mantle, a lawyer who retires at age 40 to pursue his dream of becoming a writer. He travels to India, where he meets a wise spiritual teacher named Julian Mantle. The teacher gives Mantle a series of life lessons, which he shares with the reader. The book has sold over 5 million copies worldwide."
+    },
+    {
+      "id": 3,
+      "name": "The Power of Your Subconscious Mind",
+      "author": "Joseph Murphy",
+      "price": 400,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://cdn.shopify.com/s/files/1/0458/6386/2439/products/ThePowerofYourSubconsciousMind.jpg?v=1609504028",
+      "discription": "The Power of Your Subconscious Mind is a 1963 self-help book by Joseph Murphy. The book teaches that the subconscious mind can be programmed to achieve success and happiness. The book has sold over 50 million copies worldwide."
+    },
+    {
+      "id": 4,
+      "name": "The Secret",
+      "author": "Rhonda Byrne",
+      "price": 500,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://www.mbibooks.com/mbibooks_details/uploads/2020/07/The-Secret.jpg",
+      "discription": "The Secret is a 2006 self-help book by Rhonda Byrne, based on the earlier film of the same name. The book is a guide to the law of attraction, which claims that thoughts can change a person's life directly. The book has sold over 30 million copies worldwide."
+    },
+    {
+      "id": 5,
+      "name": "The Magic",
+      "author": "Rhonda Byrne",
+      "price": 600,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/81wgT+4iCwL.jpg",
+      "discription": "The Magic is a 2006 self-help book by Rhonda Byrne, based on the earlier film of the same name. The book is a guide to the law of attraction, which claims that thoughts can change a person's life directly. The book has sold over 30 million copies worldwide."
+    },
+    {
+      "id": 6,
+      "name": "The Power of Now",
+      "author": "Eckhart Tolle",
+      "price": 700,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://cdn.shopify.com/s/files/1/0458/6386/2439/products/ThePowerofNow-min.jpg?v=1609503866",
+      "discription": "The Power of Now is a 1997 self-help book by Eckhart Tolle. The book is a guide to enlightenment and inner peace. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 7,
+      "name": "The 7 Habits of Highly Effective People",
+      "author": "Stephen R. Covey",
+      "price": 800,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://cdn.shopify.com/s/files/1/0458/6386/2439/products/51fEYMhtHoL-min.jpg?v=1631701481",
+      "discription": "The 7 Habits of Highly Effective People is a 1989 self-help book by Stephen R. Covey. The book teaches readers seven habits that can be used to improve their lives. The book has sold over 25 million copies worldwide."
+    },
+    {
+      "id": 8,
+      "name": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "price": 900,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://cdn.shopify.com/s/files/1/0458/6386/2439/products/thinkandgrowrich.jpg?v=1609502705",
+      "discription": "Think and Grow Rich is a 1937 self-help book by Napoleon Hill. The book is one of the best-selling books of all time, selling over 100 million copies. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 100 million copies worldwide."
+    },
+    {
+      "id": 9,
+      "name": "The 5 Love Languages",
+      "author": "Gary Chapman",
+      "price": 1000,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/41SN4Stb4xL._AC_SY780_.jpg",
+      "discription": "The 5 Love Languages is a 1995 self-help book by Gary Chapman. The book teaches readers how to express love in a way that their partner will understand. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 10,
+      "name": "The 4-Hour Workweek",
+      "author": "Timothy Ferriss",
+      "price": 1100,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://cdn.shopify.com/s/files/1/0458/6386/2439/products/71ql4xBmpAL-min_1024x1024.jpg?v=1631701478",
+      "discription": "The 4-Hour Workweek is a 2007 self-help book by Timothy Ferriss. The book teaches readers how to work less and live more. The book has sold over 5 million copies worldwide."
+    },
+    {
+      "id": 11,
+      "name": "The 7 Habits of Highly Effective Teens",
+      "author": "Sean Covey",
+      "price": 1200,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442369818l/783127._SY475_.jpg",
+      "discription": "The 7 Habits of Highly Effective Teens is a 1998 self-help book by Sean Covey. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 12,
+      "name": "The 5 Second Rule",
+      "author": "Mel Robbins",
+      "price": 1300,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://cdn.shopify.com/s/files/1/0458/6386/2439/products/51DwJ-pSRwL._SX351_BO1_204_203_200_-min.jpg?v=1631701481",
+      "discription": "The 5 Second Rule is a 2015 self-help book by Mel Robbins. The book teaches readers how to overcome procrastination and take action. The book has sold over 5 million copies worldwide."
+    },
+    {
+      "id": 13,
+      "name": "The 48 Laws of Power",
+      "author": "Robert Greene",
+      "price": 1400,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://cdn.shopify.com/s/files/1/0458/6386/2439/products/71951W96oWL.jpg?v=1631701478",
+      "discription": "The 48 Laws of Power is a 1998 self-help book by Robert Greene. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 14,
+      "name": "The 5 Levels of Leadership",
+      "author": "John C. Maxwell",
+      "price": 1500,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/412odNOCFaL.jpg",
+      "discription": "The 5 Levels of Leadership is a 2007 self-help book by John C. Maxwell. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 15,
+      "name": "The 5 Dysfunctions of a Team",
+      "author": "Patrick Lencioni",
+      "price": 1600,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/41iQsLUZGLL._AC_SY780_.jpg",
+      "discription": "The 5 Dysfunctions of a Team is a 2002 self-help book by Patrick Lencioni. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 16,
+      "name": "The 5 Choices",
+      "author": "Kory Kogon",
+      "price": 1700,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/51ZlsOvi9lL.jpg",
+      "discription": "The 5 Choices is a 2015 self-help book by Kory Kogon. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 17,
+      "name": "The 5 AM Club",
+      "author": "Robin Sharma",
+      "price": 1800,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://cdn.shopify.com/s/files/1/0458/6386/2439/products/71eijJe2ntL-min_1024x1024.jpg?v=1631701481",
+      "discription": "The 5 AM Club is a 2015 self-help book by Robin Sharma. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 18,
+      "name": "The 5 Love Languages of Teenagers",
+      "author": "Gary Chapman",
+      "price": 1900,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/41bsLX+xb5L._AC_SY780_.jpg",
+      "discription": "The 5 Love Languages of Teenagers is a 2015 self-help book by Gary Chapman. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 19,
+      "name": "The 5 Love Languages of Children",
+      "author": "Gary Chapman",
+      "price": 2000,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/516lgavDTpL._AC_SY780_.jpg",
+      "discription": "The 5 Love Languages of Children is a 2015 self-help book by Gary Chapman. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id": 20,
+      "name": "The 5 Love Languages",
+
+      "author": "Gary Chapman",
+      "price": 2100,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/51ZlsOvi9lL.jpg",
+      "discription": "The 5 Love Languages is a 2015 self-help book by Gary Chapman. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    },
+    {
+      "id":21,
+      "name": "The 4-Hour Workweek",
+      "author": "Timothy Ferriss",
+      "price": 2200,
+      "rating": 4.5,
+      "category": "fiction",
+      "image": "https://m.media-amazon.com/images/I/51ZlsOvi9lL.jpg",
+      "discription": "The 4-Hour Workweek is a 2015 self-help book by Timothy Ferriss. The book teaches readers how to become successful through the power of positive thinking. The book has sold over 10 million copies worldwide."
+    }
+  ]
