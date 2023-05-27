@@ -1,0 +1,31 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: hsl(226, 43%, 10%);
+  width: 1440px;
+  color: white;
+  font-size: 18px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.container {
+  width: 1200px;
+  height: 550px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.cards {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
