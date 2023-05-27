@@ -1,6 +1,5 @@
 import React from 'react'
 import './Card.css'
-import bgimg from './images/icon-work.svg'
 import pnt from './images/icon-ellipsis.svg'
 
 export default function Card({elm,timeframe}) {
