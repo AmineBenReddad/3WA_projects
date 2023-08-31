@@ -1,0 +1,165 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Early GameBoy";
+}
+body {
+    border: 7px dashed black;
+    height: 100vh;
+}
+
+
+/* Design */
+.container {
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    margin-top: 70px;
+    padding: 30px 60px;
+    text-align: center;
+    border: 7px dashed black;
+}
+.game-space {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 20px;
+    border: 7px dashed black;
+}
+.table-space {
+    width: calc(100%/3);
+    padding: 20px;
+}
+.characters {
+    width: calc(100%/3);
+    height: 100%;
+}
+
+
+
+/* User side */
+.user-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.user {
+    width: 60%;
+}
+.user img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.user-choices {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+.user-choices img {
+    width: 64px;
+}
+.user-choices div {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+.user-choices div:hover {
+    cursor: pointer;
+}
+
+
+.result {
+    width: 50%;
+    height: 60px;
+    margin: auto;
+    background-color: rgb(145, 145, 204);
+}
+
+/* Robot side */
+.robot-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100%;
+}
+.robot-choices {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+.robot {
+    width: 60%;
+}
+.robot img {
+    width: 100%;
+}
+.robot-choices img {
+    width: 64px;
+}
+
+.robot-choices div {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+/* Table side */
+.table {
+    width: 100%;
+    height: 65%;
+    margin-top: 40px;
+    border: 4px solid black;
+    border-radius: 100px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.scores {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.scr {
+    width: 90px;
+    height: 40px;
+    padding: 5px 15px;
+    border: 3px solid black;
+}
+#user-table {
+    width: 110px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 60px;
+}
+#robot-table {
+    width: 110px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 60px;
+}
+

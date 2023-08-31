@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="//db.onlinewebfonts.com/c/3ada9815c06d2619d52d16a5601c96b2?family=Early+GameBoy" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="game-space">
+            <div class="characters" class="user-div">
+                <div class="user-content">
+                    <div class="user">
+                        <img src="images/homme.png">
+                        <p>Your turn</p>
+                    </div>
+                    <div class="user-choices">
+                        <div><img class="user-choice" src="images/rock.png"></div>
+                        <div><img class="user-choice" src="images/paper.png"></div>
+                        <div><img class="user-choice" src="images/scissors.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-space">
+                <div class="table">
+                    <div id="user-table"></div>
+                    <div id="robot-table"></div>
+                </div>
+                <div class="scores">
+                    <div class="scr" id="user-score"></div>
+                    <div class="scr" id="robot-score"></div>
+                </div>
+            </div>
+            <div class="characters" class="robot-div">
+                <div class="robot-content">
+                    <div class="robot">
+                        <img src="images/robotique.png">
+                    </div>
+                    <div class="robot-choices">
+                        <div><img class="robot-choice" src="images/rock.png"></div>
+                        <div><img class="robot-choice" src="images/paper.png"></div>
+                        <div><img class="robot-choice" src="images/scissors.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
